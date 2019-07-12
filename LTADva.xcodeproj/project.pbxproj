@@ -16,6 +16,7 @@
 		8D6961CB22D87F1600A39E8E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6961CA22D87F1600A39E8E /* RegisterViewController.swift */; };
 		8D6961CD22D87F3A00A39E8E /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6961CC22D87F3A00A39E8E /* Auth.storyboard */; };
 		8D6961D222D8A7DC00A39E8E /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6961D122D8A7DC00A39E8E /* StoryboardScenes.swift */; };
+		8D6961D622D8A9C400A39E8E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6961D522D8A9C400A39E8E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8D6961CA22D87F1600A39E8E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8D6961CC22D87F3A00A39E8E /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		8D6961D122D8A7DC00A39E8E /* StoryboardScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoryboardScenes.swift; path = LTADva/Storyboards/StoryboardScenes.swift; sourceTree = SOURCE_ROOT; };
+		8D6961D522D8A9C400A39E8E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				8D6961AE22D871C900A39E8E /* MainViewController.swift */,
 				8D6961CA22D87F1600A39E8E /* RegisterViewController.swift */,
+				8D6961D522D8A9C400A39E8E /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				8D6961AF22D871C900A39E8E /* MainViewController.swift in Sources */,
 				8D6961AD22D871C900A39E8E /* AppDelegate.swift in Sources */,
 				8D6961CB22D87F1600A39E8E /* RegisterViewController.swift in Sources */,
+				8D6961D622D8A9C400A39E8E /* LoginViewController.swift in Sources */,
 				8D6961D222D8A7DC00A39E8E /* StoryboardScenes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -33,6 +33,8 @@ class MainViewController: UIViewController {
 
     @IBAction func loginButtonTapped(_ sender: Any) {
         print("Login btn tapped...")
+        let loginVC = StoryboardScene.Auth.loginViewController.instantiate()
+        navigationController?.pushViewController(loginVC, animated: true)
     }
     
     @IBAction func signupButtonTapped(_ sender: Any) {

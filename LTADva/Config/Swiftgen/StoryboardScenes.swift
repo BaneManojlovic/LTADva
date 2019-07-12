@@ -15,6 +15,8 @@ internal enum StoryboardScene {
   internal enum Auth: StoryboardType {
     internal static let storyboardName = "Auth"
 
+    internal static let loginViewController = SceneType<LTADva.LoginViewController>(storyboard: Auth.self, identifier: "LoginViewController")
+
     internal static let registerViewController = SceneType<LTADva.RegisterViewController>(storyboard: Auth.self, identifier: "RegisterViewController")
   }
   internal enum LaunchScreen: StoryboardType {

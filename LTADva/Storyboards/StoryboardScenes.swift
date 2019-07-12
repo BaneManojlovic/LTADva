@@ -20,6 +20,8 @@ internal enum StoryboardScene {
         static var storyboardName = "Auth"
         
         internal static let registerViewController = SceneType<LTADva.RegisterViewController>(storyboard: Auth.self, identifier: "RegisterViewController")
+        
+        internal static let loginViewController = SceneType<LTADva.LoginViewController>(storyboard: Auth.self, identifier: "LoginViewController")
     }
     
 }
