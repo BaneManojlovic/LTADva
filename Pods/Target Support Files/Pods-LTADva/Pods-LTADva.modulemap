@@ -1,0 +1,6 @@
+framework module Pods_LTADva {
+  umbrella header "Pods-LTADva-umbrella.h"
+
+  export *
+  module * { export * }
+}

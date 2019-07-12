@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AED24477B86BD67F0C319B0 /* Pods_LTADva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EED5DD37BC828814DE84C12 /* Pods_LTADva.framework */; };
 		8D6961AD22D871C900A39E8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6961AC22D871C900A39E8E /* AppDelegate.swift */; };
 		8D6961AF22D871C900A39E8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6961AE22D871C900A39E8E /* ViewController.swift */; };
 		8D6961B222D871C900A39E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6961B022D871C900A39E8E /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5364B00FF81726C575FB0C47 /* Pods-LTADva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTADva.debug.xcconfig"; path = "Target Support Files/Pods-LTADva/Pods-LTADva.debug.xcconfig"; sourceTree = "<group>"; };
+		59914B8B3BB298823D80A9F3 /* Pods-LTADva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTADva.release.xcconfig"; path = "Target Support Files/Pods-LTADva/Pods-LTADva.release.xcconfig"; sourceTree = "<group>"; };
+		7EED5DD37BC828814DE84C12 /* Pods_LTADva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTADva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6961A922D871C900A39E8E /* LTADva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTADva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6961AC22D871C900A39E8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D6961AE22D871C900A39E8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AED24477B86BD67F0C319B0 /* Pods_LTADva.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2926FF8AE380F1B3E289DAF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5364B00FF81726C575FB0C47 /* Pods-LTADva.debug.xcconfig */,
+				59914B8B3BB298823D80A9F3 /* Pods-LTADva.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2A1F5A6DCF742AC5F8B3195C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EED5DD37BC828814DE84C12 /* Pods_LTADva.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D6961A022D871C900A39E8E = {
 			isa = PBXGroup;
 			children = (
 				8D6961AB22D871C900A39E8E /* LTADva */,
 				8D6961AA22D871C900A39E8E /* Products */,
+				2926FF8AE380F1B3E289DAF1 /* Pods */,
+				2A1F5A6DCF742AC5F8B3195C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D6961BB22D871CA00A39E8E /* Build configuration list for PBXNativeTarget "LTADva" */;
 			buildPhases = (
+				25A7C0ACE66CF5C929663A2B /* [CP] Check Pods Manifest.lock */,
 				8D6961A522D871C900A39E8E /* Sources */,
 				8D6961A622D871C900A39E8E /* Frameworks */,
 				8D6961A722D871C900A39E8E /* Resources */,
+				BD14A40029A66A24B5B954BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +228,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25A7C0ACE66CF5C929663A2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LTADva-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD14A40029A66A24B5B954BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LTADva/Pods-LTADva-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LTADva/Pods-LTADva-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LTADva/Pods-LTADva-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D6961A522D871C900A39E8E /* Sources */ = {
@@ -352,6 +421,7 @@
 		};
 		8D6961BC22D871CA00A39E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5364B00FF81726C575FB0C47 /* Pods-LTADva.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,6 +439,7 @@
 		};
 		8D6961BD22D871CA00A39E8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59914B8B3BB298823D80A9F3 /* Pods-LTADva.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
