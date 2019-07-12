@@ -1,0 +1,10 @@
+ib:
+  inputs: LTADva/Storyboards
+  outputs:
+    templateName: scenes-swift4
+    output: LTADva/Config/Swiftgen/StoryboardScenes.swift
+xcassets:
+  inputs: LTADva/Assets/Assets.xcassets
+  outputs:
+    templateName: swift4
+    output:  LTADva/Config/Swiftgen/Assets.swift

@@ -9,12 +9,34 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setupUI()
+        
+    }
+    
+    func setupUI() {
+        loginButton.layer.cornerRadius = 15
+        loginButton.layer.borderWidth = 2
+        loginButton.layer.borderColor = UIColor.white.cgColor
+        
+        signupButton.layer.cornerRadius = 15
+        signupButton.layer.borderWidth = 2
+        signupButton.layer.borderColor = UIColor.white.cgColor
     }
 
-
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        print("Login btn tapped...")
+    }
+    
+    @IBAction func signupButtonTapped(_ sender: Any) {
+        print("Signup btn tapped...")
+    }
 }
 
