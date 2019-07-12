@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 //2.
-final class APIManager {
+final class APIManager: BaseAPI {
     
     var baseURL: URL = Config.instance.apiURL
     
@@ -22,5 +22,19 @@ final class APIManager {
         static let deviceToken = "api/device-token"
     }
     
+    // MARK: - Function for registration of the user
+    typealias RegisterSuccess = () -> Void
+    func register(
+        requestModel: RegisterRequestModel,
+        success: @escaping RegisterSuccess,
+        failure: @escaping APIFailure)
+    {
+        sendPOSTRequest(
+            endpoint: Endpoint.signUp,
+            model: requestModel,
+            success: { (_: EmptyResponse?, _) in
+                success()
+        }, failure: failure)
+    }
     
 }
