@@ -37,6 +37,8 @@ class MainViewController: UIViewController {
     
     @IBAction func signupButtonTapped(_ sender: Any) {
         print("Signup btn tapped...")
+        let registerVC = StoryboardScene.Auth.registerViewController.instantiate()
+        navigationController?.pushViewController(registerVC, animated: true)
     }
 }
 

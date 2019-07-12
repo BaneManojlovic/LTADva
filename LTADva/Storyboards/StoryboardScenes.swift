@@ -13,7 +13,15 @@ internal enum StoryboardScene {
     internal enum Main: StoryboardType {
         static var storyboardName = "Main"
         
+        internal static let mainViewController = SceneType<LTADva.MainViewController>(storyboard: Auth.self, identifier: "MainViewController")
     }
+    
+    internal enum Auth: StoryboardType {
+        static var storyboardName = "Auth"
+        
+        internal static let registerViewController = SceneType<LTADva.RegisterViewController>(storyboard: Auth.self, identifier: "RegisterViewController")
+    }
+    
 }
 
 // MARK: - Implementation Details

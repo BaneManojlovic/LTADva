@@ -13,7 +13,9 @@
 		8D6961B222D871C900A39E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6961B022D871C900A39E8E /* Main.storyboard */; };
 		8D6961B422D871CA00A39E8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6961B322D871CA00A39E8E /* Assets.xcassets */; };
 		8D6961B722D871CA00A39E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6961B522D871CA00A39E8E /* LaunchScreen.storyboard */; };
-		8D6961C922D87C8000A39E8E /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6961C822D87C8000A39E8E /* StoryboardScenes.swift */; };
+		8D6961CB22D87F1600A39E8E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6961CA22D87F1600A39E8E /* RegisterViewController.swift */; };
+		8D6961CD22D87F3A00A39E8E /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6961CC22D87F3A00A39E8E /* Auth.storyboard */; };
+		8D6961D222D8A7DC00A39E8E /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6961D122D8A7DC00A39E8E /* StoryboardScenes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +29,9 @@
 		8D6961B322D871CA00A39E8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D6961B622D871CA00A39E8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D6961B822D871CA00A39E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D6961C822D87C8000A39E8E /* StoryboardScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		8D6961CA22D87F1600A39E8E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8D6961CC22D87F3A00A39E8E /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		8D6961D122D8A7DC00A39E8E /* StoryboardScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoryboardScenes.swift; path = LTADva/Storyboards/StoryboardScenes.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +84,10 @@
 		8D6961AB22D871C900A39E8E /* LTADva */ = {
 			isa = PBXGroup;
 			children = (
-				8D6961C722D87C4700A39E8E /* Swiftgen */,
+				8D6961CF22D8A7A900A39E8E /* Config */,
 				8D6961BF22D8727600A39E8E /* AppDelegate */,
 				8D6961C022D8728E00A39E8E /* Assets */,
 				8D6961C522D872C600A39E8E /* Api */,
-				8D6961C322D872B100A39E8E /* Config */,
 				8D6961C222D872AA00A39E8E /* Mapper */,
 				8D6961C422D872BB00A39E8E /* Extensions */,
 				8D6961BE22D8726800A39E8E /* Storyboards */,
@@ -99,6 +102,7 @@
 			children = (
 				8D6961B522D871CA00A39E8E /* LaunchScreen.storyboard */,
 				8D6961B022D871C900A39E8E /* Main.storyboard */,
+				8D6961CC22D87F3A00A39E8E /* Auth.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -124,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8D6961AE22D871C900A39E8E /* MainViewController.swift */,
+				8D6961CA22D87F1600A39E8E /* RegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -133,13 +138,6 @@
 			children = (
 			);
 			path = Mapper;
-			sourceTree = "<group>";
-		};
-		8D6961C322D872B100A39E8E /* Config */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		8D6961C422D872BB00A39E8E /* Extensions */ = {
@@ -163,10 +161,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		8D6961C722D87C4700A39E8E /* Swiftgen */ = {
+		8D6961CF22D8A7A900A39E8E /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				8D6961C822D87C8000A39E8E /* StoryboardScenes.swift */,
+				8D6961D022D8A7B900A39E8E /* Swiftgen */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8D6961D022D8A7B900A39E8E /* Swiftgen */ = {
+			isa = PBXGroup;
+			children = (
+				8D6961D122D8A7DC00A39E8E /* StoryboardScenes.swift */,
 			);
 			path = Swiftgen;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 				8D6961A622D871C900A39E8E /* Frameworks */,
 				8D6961A722D871C900A39E8E /* Resources */,
 				BD14A40029A66A24B5B954BF /* [CP] Embed Pods Frameworks */,
+				8D6961CE22D87F6100A39E8E /* Swiftgen */,
 			);
 			buildRules = (
 			);
@@ -231,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6961CD22D87F3A00A39E8E /* Auth.storyboard in Resources */,
 				8D6961B722D871CA00A39E8E /* LaunchScreen.storyboard in Resources */,
 				8D6961B422D871CA00A39E8E /* Assets.xcassets in Resources */,
 				8D6961B222D871C900A39E8E /* Main.storyboard in Resources */,
@@ -262,6 +270,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8D6961CE22D87F6100A39E8E /* Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which $PODS_ROOT/SwiftGen/bin/swiftgen >/dev/null; then\n$PODS_ROOT/SwiftGen/bin/swiftgen config run --config swiftgen-ltadva.yml\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi\n";
+		};
 		BD14A40029A66A24B5B954BF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,7 +314,8 @@
 			files = (
 				8D6961AF22D871C900A39E8E /* MainViewController.swift in Sources */,
 				8D6961AD22D871C900A39E8E /* AppDelegate.swift in Sources */,
-				8D6961C922D87C8000A39E8E /* StoryboardScenes.swift in Sources */,
+				8D6961CB22D87F1600A39E8E /* RegisterViewController.swift in Sources */,
+				8D6961D222D8A7DC00A39E8E /* StoryboardScenes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,10 @@
 ib:
   inputs: LTADva/Storyboards
   outputs:
-    templateName: scenes-swift4
-    output: LTADva/Config/Swiftgen/StoryboardScenes.swift
+    - templateName: scenes-swift4
+      output: LTADva/Config/Swiftgen/StoryboardScenes.swift
+    - templateName: segues-swift4
+      output: LTADva/Config/Swiftgen/StoryboardSegues.swift
 xcassets:
   inputs: LTADva/Assets/Assets.xcassets
   outputs:
