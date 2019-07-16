@@ -8,5 +8,7 @@ target 'LTADva' do
   # Pods for LTADva
   pod 'Alamofire'
   pod 'SwiftGen'
+  pod 'SwiftyGif'
+  pod 'SwiftGifOrigin'
 
 end
