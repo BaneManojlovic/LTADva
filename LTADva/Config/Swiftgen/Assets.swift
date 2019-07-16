@@ -18,6 +18,8 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
+  internal static let dancingBanana = DataAsset(name: "Dancing_banana")
+  internal static let captAmerica = DataAsset(name: "capt_america")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

@@ -13,13 +13,20 @@
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="launchViewController" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LTADva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVG-Do-iaD">
-                                <rect key="frame" x="137.5" y="424" width="139" height="48"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dancing_banana.gif" translatesAutoresizingMaskIntoConstraints="NO" id="C3R-qJ-7MZ">
+                                <rect key="frame" x="107" y="328" width="200" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="bVp-c9-PrH"/>
+                                    <constraint firstAttribute="width" constant="200" id="qxs-h3-9D9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LTADva" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVG-Do-iaD">
+                                <rect key="frame" x="110" y="573" width="194" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -27,8 +34,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.1386183647260274" blue="0.62984267979452058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aVG-Do-iaD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aEO-ao-7lT"/>
-                            <constraint firstItem="aVG-Do-iaD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gbj-oh-ScT"/>
+                            <constraint firstItem="C3R-qJ-7MZ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DAL-yk-Utp"/>
+                            <constraint firstItem="aVG-Do-iaD" firstAttribute="top" secondItem="C3R-qJ-7MZ" secondAttribute="bottom" constant="5" id="Fdb-rY-Y01"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aVG-Do-iaD" secondAttribute="trailing" constant="110" id="Jbk-nD-JFc"/>
+                            <constraint firstItem="aVG-Do-iaD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="NY5-Tv-z6E"/>
+                            <constraint firstItem="C3R-qJ-7MZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aTE-it-9qF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,4 +48,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dancing_banana.gif" width="249" height="246"/>
+    </resources>
 </document>

@@ -23,6 +23,8 @@ internal enum StoryboardScene {
     internal static let storyboardName = "LaunchScreen"
 
     internal static let initialScene = InitialSceneType<UIKit.UIViewController>(storyboard: LaunchScreen.self)
+
+    internal static let launchViewController = SceneType<UIKit.UIViewController>(storyboard: LaunchScreen.self, identifier: "launchViewController")
   }
   internal enum Main: StoryboardType {
     internal static let storyboardName = "Main"
